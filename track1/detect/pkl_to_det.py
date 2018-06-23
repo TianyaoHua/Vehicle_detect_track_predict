@@ -64,7 +64,8 @@ def main(video_dir, detection_file, output_dir):
             #assert isinstance(r, dict), (r[0], pkl) 
             if isinstance(r, tuple):
                  r = r[1] # old data format: (frame number, r)
-            padding_length = max(len(contour[0].flatten()) for contour in r["contours"]) + 3
+            padding_length = max(len(contour[0])*2 for contour in r["contours"]) + 3
+            print(padding_length)
             for i, roi in enumerate(r['rois']):
                 y1, x1, y2, x2 = roi
                 conf = r['scores'][i]

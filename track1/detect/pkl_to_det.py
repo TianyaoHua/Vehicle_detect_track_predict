@@ -69,7 +69,7 @@ def main(video_dir, detection_file, output_dir):
                 conf = r['scores'][i]
                 cid = class_names[r['class_ids'][i]]
                 fid = fnum
-                if cid in ['car', 'truck', 'bus']:
+                if cid in ['car', 'truck', 'bus', 'person', 'motorcycle', 'bicycle']:
                     det = [fid, -1, x1, y1, abs(x2-x1), abs(y2-y1), conf, -1, -1, -1]
                     string = ", ".join([str(x) for x in det])+"\n"
                     f.write(string)

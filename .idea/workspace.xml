@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a573ac79-d7b6-4ed0-9814-a17f9431bdd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track1/detect/pkl_to_det.py" afterPath="$PROJECT_DIR$/track1/detect/pkl_to_det.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track1/track/tools/generate_detections.py" afterPath="$PROJECT_DIR$/track1/track/tools/generate_detections.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -40,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pkl_to_det.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pkl_to_det.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track1/detect/pkl_to_det.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="632">
-              <caret line="102" column="12" lean-forward="true" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
+            <state relative-caret-position="233">
+              <caret line="66" column="56" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -74,7 +72,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate_detections.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generate_detections.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track1/track/tools/generate_detections.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="214">
@@ -134,8 +132,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/draft.py" />
-        <option value="$PROJECT_DIR$/track1/detect/pkl_to_det.py" />
         <option value="$PROJECT_DIR$/track1/track/tools/generate_detections.py" />
+        <option value="$PROJECT_DIR$/track1/detect/pkl_to_det.py" />
       </list>
     </option>
   </component>
@@ -389,22 +387,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track1/detect/pkl_to_det.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="632">
-          <caret line="102" column="12" lean-forward="true" selection-start-line="102" selection-start-column="12" selection-end-line="102" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track1/track/tools/generate_detections.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding>
             <element signature="e#27#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track1/detect/pkl_to_det.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="66" column="56" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

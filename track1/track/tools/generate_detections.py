@@ -119,7 +119,7 @@ def create_box_encoder(model_filename, input_name="images",
         image_patches = []
         for i in range(len(boxes)):
         #for box in boxes:
-            box, contour = boxes[i], contours[i]
+            box, contour = np.array(boxes[i]), np.array(contours[i])
             contour = contour[:-3].reshape(contour[-3:].astype(np.int))
             patch = extract_image_patch(image, box, contour, image_shape[:2])
             if patch is None:
@@ -181,7 +181,15 @@ def generate_detections(encoder, mot_dir, output_dir, detection_dir=None):
                 for f in os.listdir(image_dir)}
             detection_file = os.path.join(
                 detection_dir, sequence, "det", sequence+"_det.txt")
-            detections_in = np.loadtxt(detection_file, delimiter=',')
+            #detections_in = np.loadtxt(detection_file, delimiter=',')
+            detections_in = []
+            with open(detection_file) as f:
+                for line in f:
+                    line = line.rstrip()
+                    line = line.split(',')
+                    line = [float(x) for x in line]
+                    detections_in.append(line)
+            detections_in = np.array(detections_in)
             detections_out = []
     
             frame_indices = detections_in[:, 0].astype(np.int)
@@ -197,7 +205,7 @@ def generate_detections(encoder, mot_dir, output_dir, detection_dir=None):
                     continue
                 bgr_image = cv2.imread(
                     image_filenames[frame_idx], cv2.IMREAD_COLOR)
-                features = encoder(bgr_image, rows[:, 2:6].copy(), rows[:, 7:].copy())
+                features = encoder(bgr_image, rows[:][2:6].copy(), rows[:][7:].copy())
                 detections_out += [np.r_[(row, feature)] for row, feature
                                    in zip(rows, features)]
     

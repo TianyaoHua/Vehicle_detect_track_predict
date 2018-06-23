@@ -64,6 +64,7 @@ def main(video_dir, detection_file, output_dir):
             #assert isinstance(r, dict), (r[0], pkl) 
             if isinstance(r, tuple):
                  r = r[1] # old data format: (frame number, r)
+            padding_length = max(len(contour[0].flatten) for contour in r["contours"]) + 3
             for i, roi in enumerate(r['rois']):
                 y1, x1, y2, x2 = roi
                 conf = r['scores'][i]
@@ -72,10 +73,13 @@ def main(video_dir, detection_file, output_dir):
                 if cid in ['car', 'truck', 'bus', 'person', 'motorcycle', 'bicycle']:
                     det = [fid, -1, x1, y1, abs(x2-x1), abs(y2-y1), conf, -1, -1, -1]
                     contour = r['contours'][i][0]
+                    contour_shape = contour.shape
+                    contour = contour.flatten()
+                    contour = np.append(contour, contour_shape)
+                    contour = np.append(contour, [0]*(padding_length-len(contour)))
                     #string = ", ".join([str(x) for x in det])+"\n"
                     string = ", ".join([str(x) for x in det]) + ','
-                    string += ",".join([str(x) for x in contour.flatten()]) + ','
-                    string += ",".join([str(x) for x in contour.shape]) + "\n"
+                    string += ",".join([str(x) for x in contour]) + '\n'
                     f.write(string)
             pbar.update(1)
         f.close()  

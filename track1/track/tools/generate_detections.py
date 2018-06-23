@@ -26,7 +26,7 @@ def _run_in_batches(f, data_dict, out, batch_size):
         out[e:] = f(batch_data_dict)
 
 
-def extract_image_patch(image, bbox, patch_shape):
+def extract_image_patch(image, bbox, contour, patch_shape):
     """Extract image patch from bounding box.
 
     Parameters
@@ -40,7 +40,8 @@ def extract_image_patch(image, bbox, patch_shape):
         (height, width). First, the `bbox` is adapted to the aspect ratio
         of the patch shape, then it is clipped at the image boundaries.
         If None, the shape is computed from :arg:`bbox`.
-
+    contour:
+        The contour of the object in the image
     Returns
     -------
     ndarray | NoneType
@@ -68,7 +69,12 @@ def extract_image_patch(image, bbox, patch_shape):
     if np.any(bbox[:2] >= bbox[2:]):
         return None
     sx, sy, ex, ey = bbox
+    # remove the background
+    contour -= [sx, sy]
     image = image[sy:ey, sx:ex]
+    mask = np.zeros(image.shape[0:2])
+    cv2.fillPoly(mask, contour, (1))
+    image = image * mask[:, :, None]
     image = cv2.resize(image, tuple(patch_shape[::-1]))
     return image
 
@@ -109,10 +115,13 @@ def create_box_encoder(model_filename, input_name="images",
     image_encoder = ImageEncoder(model_filename, input_name, output_name)
     image_shape = image_encoder.image_shape
 
-    def encoder(image, boxes):
+    def encoder(image, boxes, contours):
         image_patches = []
-        for box in boxes:
-            patch = extract_image_patch(image, box, image_shape[:2])
+        for i in range(len(boxes)):
+        #for box in boxes:
+            box, contour = boxes[i], contours[i]
+            contour = contour[:-3].reshape(contour[-3:].astype(np.int))
+            patch = extract_image_patch(image, box, contour, image_shape[:2])
             if patch is None:
                 print("WARNING: Failed to extract image patch: %s." % str(box))
                 patch = np.random.uniform(
@@ -170,7 +179,6 @@ def generate_detections(encoder, mot_dir, output_dir, detection_dir=None):
             image_filenames = {
                 int(os.path.splitext(f)[0].split('_')[-1]): os.path.join(image_dir, f)
                 for f in os.listdir(image_dir)}
-    
             detection_file = os.path.join(
                 detection_dir, sequence, "det", sequence+"_det.txt")
             detections_in = np.loadtxt(detection_file, delimiter=',')
@@ -189,7 +197,7 @@ def generate_detections(encoder, mot_dir, output_dir, detection_dir=None):
                     continue
                 bgr_image = cv2.imread(
                     image_filenames[frame_idx], cv2.IMREAD_COLOR)
-                features = encoder(bgr_image, rows[:, 2:6].copy())
+                features = encoder(bgr_image, rows[:, 2:6].copy(), rows[:, 7:].copy())
                 detections_out += [np.r_[(row, feature)] for row, feature
                                    in zip(rows, features)]
     

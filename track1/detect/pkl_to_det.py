@@ -69,9 +69,13 @@ def main(video_dir, detection_file, output_dir):
                 conf = r['scores'][i]
                 cid = class_names[r['class_ids'][i]]
                 fid = fnum
-                if cid in ['car', 'truck', 'bus']:
+                if cid in ['car', 'truck', 'bus', 'people']:
                     det = [fid, -1, x1, y1, abs(x2-x1), abs(y2-y1), conf, -1, -1, -1]
-                    string = ", ".join([str(x) for x in det])+"\n"
+                    contour = r['contours'][i][0]
+                    #string = ", ".join([str(x) for x in det])+"\n"
+                    string = ", ".join([str(x) for x in det]) + ','
+                    string += ",".join([str(x) for x in contour.flatten()]) + ','
+                    string += ",".join([str(x) for x in contour.shape]) + "\n"
                     f.write(string)
             pbar.update(1)
         f.close()  

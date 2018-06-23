@@ -198,7 +198,7 @@ def generate_detections(encoder, mot_dir, output_dir, detection_dir=None):
                     continue
                 bgr_image = cv2.imread(
                     image_filenames[frame_idx], cv2.IMREAD_COLOR)
-                features = encoder(bgr_image, rows[:, 2:6].copy(), rows[:, 7:].copy())
+                features = encoder(bgr_image, rows[:, 2:6].copy(), rows[:, 10:].copy())
                 detections_out += [np.r_[(row, feature)] for row, feature
                                    in zip(rows, features)]
     

@@ -54,6 +54,10 @@ def main(video_dir, detection_file, output_dir):
         ub = min(ub_init, len(pkl_files)-1)
         lb = max(lb_init, 0) 
         pbar = tqdm.tqdm(total = ub-lb+1)
+        padding_length = 0
+        for pkl in pkl_files:
+            r = pickle.load(open(os.path.join(pkl_dir, pkl), "rb"))
+            padding_length = max(padding_length, max(contour[0].shape[0] * 2 for contour in r["contours"]) + 3)
         for pkl in pkl_files:
             fnum = int(pkl.replace(".pkl", "").replace('img', ''))
             if fnum<lb:
@@ -64,8 +68,6 @@ def main(video_dir, detection_file, output_dir):
             #assert isinstance(r, dict), (r[0], pkl) 
             if isinstance(r, tuple):
                  r = r[1] # old data format: (frame number, r)
-            padding_length = max(len(contour[0])*2 for contour in r["contours"]) + 3
-            print(padding_length)
             for i, roi in enumerate(r['rois']):
                 y1, x1, y2, x2 = roi
                 conf = r['scores'][i]

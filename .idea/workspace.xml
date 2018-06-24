@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a573ac79-d7b6-4ed0-9814-a17f9431bdd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/draft.py" afterPath="$PROJECT_DIR$/draft.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track1/detect/pkl_to_det.py" afterPath="$PROJECT_DIR$/track1/detect/pkl_to_det.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track1/track/tools/generate_detections.py" afterPath="$PROJECT_DIR$/track1/track/tools/generate_detections.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -41,11 +38,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pkl_to_det.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pkl_to_det.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track1/detect/pkl_to_det.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="85" column="35" lean-forward="true" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
+            <state relative-caret-position="100">
+              <caret line="59" column="52" lean-forward="true" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -65,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="generate_detections.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="generate_detections.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track1/track/tools/generate_detections.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-375">
+            <state relative-caret-position="-2264">
               <caret line="51" column="45" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="45" />
               <folding>
                 <element signature="e#27#36#0" expanded="true" />
@@ -125,8 +122,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/track1/track/tools/generate_detections.py" />
-        <option value="$PROJECT_DIR$/track1/detect/pkl_to_det.py" />
         <option value="$PROJECT_DIR$/draft.py" />
+        <option value="$PROJECT_DIR$/track1/detect/pkl_to_det.py" />
       </list>
     </option>
   </component>
@@ -136,7 +133,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-55" />
     <option name="y" value="130" />
     <option name="width" value="1400" />
@@ -275,7 +272,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1551" height="839" extended-state="7" />
+    <frame x="-7" y="-7" width="1551" height="839" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25319007" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -470,22 +467,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track1/detect/pkl_to_det.py">
+    <entry file="file://$PROJECT_DIR$/track1/track/tools/generate_detections.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="85" column="35" lean-forward="true" selection-start-line="85" selection-start-column="35" selection-end-line="85" selection-end-column="35" />
+        <state relative-caret-position="-2264">
+          <caret line="51" column="45" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="45" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#27#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track1/track/tools/generate_detections.py">
+    <entry file="file://$PROJECT_DIR$/track1/detect/pkl_to_det.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-375">
-          <caret line="51" column="45" lean-forward="false" selection-start-line="51" selection-start-column="41" selection-end-line="51" selection-end-column="45" />
+        <state relative-caret-position="100">
+          <caret line="59" column="52" lean-forward="true" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
           <folding>
-            <element signature="e#27#36#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>

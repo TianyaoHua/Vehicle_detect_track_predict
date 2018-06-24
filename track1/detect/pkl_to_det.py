@@ -57,7 +57,7 @@ def main(video_dir, detection_file, output_dir):
         padding_length = 0
         for pkl in pkl_files:
             r = pickle.load(open(os.path.join(pkl_dir, pkl), "rb"))
-            padding_length = max(padding_length, max(contour[0].shape[0] * 2 for contour in r["contours"]) + 3)
+            padding_length = max(padding_length, max(sum(i.shape[0] for i in contour) * 2 for contour in r["contours"]) + 3)
         for pkl in pkl_files:
             fnum = int(pkl.replace(".pkl", "").replace('img', ''))
             if fnum<lb:

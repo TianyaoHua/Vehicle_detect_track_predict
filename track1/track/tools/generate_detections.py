@@ -110,7 +110,7 @@ def extract_image_patch(image, bbox, contour, patch_shape):
     rect = cv2.minAreaRect(contour)
     box = cv2.boxPoints(rect)
     box = np.int0(box)
-    image_cropped = crop_minAreaRect(image, rect, box)
+    image_cropped = crop_minAreaRect(image.astype(np.uint8), rect, box)
     image_cropped = cv2.resize(image_cropped, tuple(patch_shape[::-1]))
     return image_cropped
 

@@ -25,6 +25,38 @@ def _run_in_batches(f, data_dict, out, batch_size):
         #print('===========================',[v[e:].shape for k, v in data_dict.items()])
         out[e:] = f(batch_data_dict)
 
+def crop_minAreaRect(img, rect, box):
+    W = rect[1][0]
+    H = rect[1][1]
+
+    Xs = [i[0] for i in box]
+    Ys = [i[1] for i in box]
+    x1 = min(Xs)
+    x2 = max(Xs)
+    y1 = min(Ys)
+    y2 = max(Ys)
+
+    rotated = False
+    angle = rect[2]
+
+    if angle < -45:
+        angle += 90
+        rotated = True
+
+    center = (int((x1 + x2) / 2), int((y1 + y2) / 2))
+    size = (int((x2 - x1)), int((y2 - y1)))
+
+    M = cv2.getRotationMatrix2D((size[0] / 2, size[1] / 2), angle, 1.0)
+
+    cropped = cv2.getRectSubPix(img, size, center)
+    cropped = cv2.warpAffine(cropped, M, size)
+
+    croppedW = W if not rotated else H
+    croppedH = H if not rotated else W
+
+    croppedRotated = cv2.getRectSubPix(cropped, (int(croppedW), int(croppedH)),
+                                       (size[0] / 2, size[1] / 2))
+    return croppedRotated
 
 def extract_image_patch(image, bbox, contour, patch_shape):
     """Extract image patch from bounding box.
@@ -73,10 +105,14 @@ def extract_image_patch(image, bbox, contour, patch_shape):
     contour -= [sx, sy]
     image = image[sy:ey, sx:ex]
     mask = np.zeros(image.shape[0:2])
-    cv2.fillPoly(mask, contour, (1))
+    cv2.fillPoly(mask, [contour], (1))
     image = image * mask[:, :, None]
-    image = cv2.resize(image, tuple(patch_shape[::-1]))
-    return image
+    rect = cv2.minAreaRect(contour)
+    box = cv2.boxPoints(rect)
+    box = np.int0(box)
+    image_cropped = crop_minAreaRect(image, rect, box)
+    image_cropped = cv2.resize(image_cropped, tuple(patch_shape[::-1]))
+    return image_cropped
 
 
 class ImageEncoder(object):

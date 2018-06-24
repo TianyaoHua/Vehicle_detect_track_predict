@@ -75,7 +75,7 @@ def main(video_dir, detection_file, output_dir):
                 fid = fnum
                 if cid in ['car', 'truck', 'bus', 'person', 'motorcycle', 'bicycle']:
                     det = [fid, -1, x1, y1, abs(x2-x1), abs(y2-y1), conf, -1, -1, -1]
-                    contour = r['contours'][i][0]
+                    contour = np.concatenate(tuple([single_contour for single_contour in r['contours'][i]]))
                     contour_shape = contour.shape
                     contour = contour.flatten()
                     contour = np.append(contour, contour_shape)

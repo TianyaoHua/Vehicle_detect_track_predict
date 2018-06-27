@@ -9,7 +9,7 @@ import tensorflow as tf
 '''
 python tools/generate_detections.py --model=resources/networks/detrac.pb --mot_dir=./Nvidia --output_dir=./resources/detections/Nvidia
 '''
-n_pic = 0
+#n_pic = 0
 def _run_in_batches(f, data_dict, out, batch_size):
     data_len = len(out)
     num_batches = int(data_len / batch_size)
@@ -56,9 +56,9 @@ def crop_minAreaRect(img, rect, box):
 
     croppedRotated = cv2.getRectSubPix(cropped, (int(croppedW), int(croppedH)),
                                        (size[0] / 2, size[1] / 2))
-    global n_pic
-    cv2.imwrite("../data/cropped_img" + str(n_pic + 1)+ ".jpg", croppedRotated)
-    n_pic += 1
+    #global n_pic
+    #cv2.imwrite("../data/cropped_img" + str(n_pic + 1)+ ".jpg", croppedRotated)
+    #n_pic += 1
     return croppedRotated
 
 def extract_image_patch(image, bbox, contour, patch_shape):

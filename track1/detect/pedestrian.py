@@ -53,7 +53,7 @@ class PedestrianConfig(Config):
     Derives from the base Config class and overrides some values.
     """
     # Give the configuration a recognizable name
-    NAME = "pedestrian"
+    NAME = "person"
 
     # We use a GPU with 12GB memory, which can fit two images.
     # Adjust down if you use a smaller GPU.
@@ -142,7 +142,7 @@ class PedestrianDataset(utils.Dataset):
             height, width = image.shape[:2]
 
             self.add_image(
-                "pedestrian",
+                "person",
                 image_id=a['filename'],  # use file name as a unique image id
                 path=image_path,
                 width=width, height=height,
@@ -157,7 +157,7 @@ class PedestrianDataset(utils.Dataset):
         """
         # If not a balloon dataset image, delegate to parent class.
         image_info = self.image_info[image_id]
-        if image_info["source"] != "pedestrian":
+        if image_info["source"] != "person":
             return super(self.__class__, self).load_mask(image_id)
 
         # Convert polygons to a bitmap mask of shape
@@ -177,7 +177,7 @@ class PedestrianDataset(utils.Dataset):
     def image_reference(self, image_id):
         """Return the path of the image."""
         info = self.image_info[image_id]
-        if info["source"] == "pedestrian":
+        if info["source"] == "person":
             return info["path"]
         else:
             super(self.__class__, self).image_reference(image_id)

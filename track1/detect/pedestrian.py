@@ -187,12 +187,12 @@ def train(model):
     """Train the model."""
     # Training dataset.
     dataset_train = PedestrianDataset()
-    dataset_train.load_balloon(args.dataset, "train")
+    dataset_train.load_pedestrian(args.dataset, "train")
     dataset_train.prepare()
 
     # Validation dataset
     dataset_val = PedestrianDataset()
-    dataset_val.load_balloon(args.dataset, "val")
+    dataset_val.load_pedestrian(args.dataset, "val")
     dataset_val.prepare()
 
     # *** This training schedule is an example. Update to your needs ***

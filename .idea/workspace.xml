@@ -54,8 +54,8 @@
       <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track1/detect/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="2217" column="9" lean-forward="true" selection-start-line="2217" selection-start-column="9" selection-end-line="2217" selection-end-column="9" />
+            <state relative-caret-position="392">
+              <caret line="2243" column="33" lean-forward="false" selection-start-line="2243" selection-start-column="33" selection-end-line="2243" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -132,7 +132,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="235" />
     <option name="y" value="35" />
     <option name="width" value="1400" />
@@ -269,7 +269,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1551" height="839" extended-state="6" />
+    <frame x="-7" y="-7" width="1551" height="839" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20550705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -660,8 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/track1/detect/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="2217" column="9" lean-forward="true" selection-start-line="2217" selection-start-column="9" selection-end-line="2217" selection-end-column="9" />
+        <state relative-caret-position="392">
+          <caret line="2243" column="33" lean-forward="false" selection-start-line="2243" selection-start-column="33" selection-end-line="2243" selection-end-column="33" />
           <folding />
         </state>
       </provider>

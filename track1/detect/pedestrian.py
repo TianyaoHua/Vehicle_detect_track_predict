@@ -42,6 +42,7 @@ COCO_WEIGHTS_PATH = os.path.join(ROOT_DIR, "model/maskrcnn/mask_rcnn_coco.h5")
 # Directory to save logs and model checkpoints, if not provided
 # through the command line argument --logs
 DEFAULT_LOGS_DIR = os.path.join(ROOT_DIR, "logs")
+print(DEFAULT_LOGS_DIR)
 
 ############################################################
 #  Configurations

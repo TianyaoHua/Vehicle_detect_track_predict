@@ -54,8 +54,18 @@
       <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track1/detect/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="2243" column="38" lean-forward="true" selection-start-line="2243" selection-start-column="38" selection-end-line="2243" selection-end-column="38" />
+            <state relative-caret-position="411">
+              <caret line="2214" column="56" lean-forward="false" selection-start-line="2214" selection-start-column="56" selection-end-line="2214" selection-end-column="56" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/My_Softerware/Python-3.63-x64/Lib/site-packages/keras/engine/training.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="2250" column="31" lean-forward="false" selection-start-line="2250" selection-start-column="31" selection-end-line="2250" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -105,6 +115,7 @@
       <find>class mask</find>
       <find>def train</find>
       <find>logs</find>
+      <find>callback</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -318,13 +329,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/track1/track/show_results.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="79" column="14" lean-forward="false" selection-start-line="79" selection-start-column="4" selection-end-line="79" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track1/track/application_util/visualization.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="608">
@@ -658,10 +662,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://C:/My_Softerware/Python-3.63-x64/Lib/site-packages/keras/engine/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="2250" column="31" lean-forward="false" selection-start-line="2250" selection-start-column="31" selection-end-line="2250" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/track1/detect/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="2243" column="38" lean-forward="true" selection-start-line="2243" selection-start-column="38" selection-end-line="2243" selection-end-column="38" />
+        <state relative-caret-position="411">
+          <caret line="2214" column="56" lean-forward="false" selection-start-line="2214" selection-start-column="56" selection-end-line="2214" selection-end-column="56" />
           <folding />
         </state>
       </provider>

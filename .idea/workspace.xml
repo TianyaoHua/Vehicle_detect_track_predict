@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a573ac79-d7b6-4ed0-9814-a17f9431bdd8" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track1/detect/pedestrian.py" afterPath="$PROJECT_DIR$/track1/detect/pedestrian.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track1/detect/model.py" afterPath="$PROJECT_DIR$/track1/detect/model.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,21 +32,11 @@
       <file leaf-file-name="pedestrian.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track1/detect/pedestrian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="204" column="15" lean-forward="false" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="15" />
+            <state relative-caret-position="474">
+              <caret line="378" column="61" lean-forward="true" selection-start-line="378" selection-start-column="61" selection-end-line="378" selection-end-column="61" />
               <folding>
                 <element signature="e#1071#1080#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="person" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/person">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -64,8 +54,8 @@
       <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track1/detect/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-957">
-              <caret line="2175" column="34" lean-forward="false" selection-start-line="2175" selection-start-column="34" selection-end-line="2175" selection-end-column="34" />
+            <state relative-caret-position="240">
+              <caret line="2217" column="9" lean-forward="true" selection-start-line="2217" selection-start-column="9" selection-end-line="2217" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -113,8 +103,8 @@
       <find>COCO_WEIGHTS_PATH</find>
       <find>DEFAULT_LOGS_DIR</find>
       <find>class mask</find>
-      <find>logs</find>
       <find>def train</find>
+      <find>logs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,8 +121,8 @@
         <option value="C:/My_Homework/Image_processing/Project/sort-master/sort-master/output/img2vedio.py" />
         <option value="$PROJECT_DIR$/../video_on_intersection/imgs/vehicle-detect-track-predict.json" />
         <option value="$PROJECT_DIR$/track1/track/tools/balloon.py" />
-        <option value="$PROJECT_DIR$/track1/detect/model.py" />
         <option value="$PROJECT_DIR$/track1/detect/pedestrian.py" />
+        <option value="$PROJECT_DIR$/track1/detect/model.py" />
       </list>
     </option>
   </component>
@@ -642,14 +632,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/track1/detect/utils.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-486">
@@ -658,10 +640,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/person">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/track1/detect/pedestrian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="204" column="15" lean-forward="false" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="15" />
+        <state relative-caret-position="474">
+          <caret line="378" column="61" lean-forward="true" selection-start-line="378" selection-start-column="61" selection-end-line="378" selection-end-column="61" />
           <folding>
             <element signature="e#1071#1080#0" expanded="true" />
           </folding>
@@ -670,8 +660,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/track1/detect/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-957">
-          <caret line="2175" column="34" lean-forward="false" selection-start-line="2175" selection-start-column="34" selection-end-line="2175" selection-end-column="34" />
+        <state relative-caret-position="240">
+          <caret line="2217" column="9" lean-forward="true" selection-start-line="2217" selection-start-column="9" selection-end-line="2217" selection-end-column="9" />
           <folding />
         </state>
       </provider>

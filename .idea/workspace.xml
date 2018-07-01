@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a573ac79-d7b6-4ed0-9814-a17f9431bdd8" name="Default" comment="" />
+    <list default="true" id="a573ac79-d7b6-4ed0-9814-a17f9431bdd8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/track1/detect/pedestrian.py" afterPath="$PROJECT_DIR$/track1/detect/pedestrian.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +32,8 @@
       <file leaf-file-name="pedestrian.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track1/detect/pedestrian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="221">
+              <caret line="204" column="15" lean-forward="false" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="15" />
               <folding>
                 <element signature="e#1071#1080#0" expanded="true" />
               </folding>
@@ -39,7 +41,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="person" pinned="false" current-in-tab="true">
+      <file leaf-file-name="person" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/person">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="133">
@@ -52,18 +54,18 @@
       <file leaf-file-name="utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track1/detect/utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
+            <state relative-caret-position="-486">
               <caret line="273" column="32" lean-forward="false" selection-start-line="273" selection-start-column="26" selection-end-line="273" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track1/detect/model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1717">
-              <caret line="1747" column="10" lean-forward="false" selection-start-line="1747" selection-start-column="0" selection-end-line="1747" selection-end-column="10" />
+            <state relative-caret-position="-957">
+              <caret line="2175" column="34" lean-forward="false" selection-start-line="2175" selection-start-column="34" selection-end-line="2175" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -108,11 +110,11 @@
       <find>mrcnn_mask_loss</find>
       <find>rpn_class_loss</find>
       <find>pedestrian</find>
-      <find>def train</find>
       <find>COCO_WEIGHTS_PATH</find>
       <find>DEFAULT_LOGS_DIR</find>
       <find>class mask</find>
       <find>logs</find>
+      <find>def train</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -640,36 +642,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track1/detect/utils.py">
+    <entry file="file://$PROJECT_DIR$/person">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="273" column="32" lean-forward="false" selection-start-line="273" selection-start-column="26" selection-end-line="273" selection-end-column="32" />
+        <state relative-caret-position="133">
+          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track1/detect/model.py">
+    <entry file="file://$PROJECT_DIR$/track1/detect/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1717">
-          <caret line="1747" column="10" lean-forward="false" selection-start-line="1747" selection-start-column="0" selection-end-line="1747" selection-end-column="10" />
+        <state relative-caret-position="-486">
+          <caret line="273" column="32" lean-forward="false" selection-start-line="273" selection-start-column="26" selection-end-line="273" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/track1/detect/pedestrian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="221">
+          <caret line="204" column="15" lean-forward="false" selection-start-line="204" selection-start-column="10" selection-end-line="204" selection-end-column="15" />
           <folding>
             <element signature="e#1071#1080#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/person">
+    <entry file="file://$PROJECT_DIR$/track1/detect/model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="51" lean-forward="true" selection-start-line="7" selection-start-column="51" selection-end-line="7" selection-end-column="51" />
+        <state relative-caret-position="-957">
+          <caret line="2175" column="34" lean-forward="false" selection-start-line="2175" selection-start-column="34" selection-end-line="2175" selection-end-column="34" />
           <folding />
         </state>
       </provider>

@@ -196,6 +196,7 @@ def train(model):
     dataset_val.load_pedestrian(args.dataset, "val")
     dataset_val.prepare()
 
+    print("data set prepare successful")
     # *** This training schedule is an example. Update to your needs ***
     # Since we're using a very small dataset, and starting from
     # COCO trained weights, we don't need to train too long. Also,
@@ -366,7 +367,7 @@ if __name__ == '__main__':
             "mrcnn_bbox", "mrcnn_mask"])
     else:
         model.load_weights(weights_path, by_name=True)
-
+    print("Loading weights successful")
     # Train or evaluate
     if args.command == "train":
         train(model)

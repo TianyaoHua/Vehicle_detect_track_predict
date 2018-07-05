@@ -70,7 +70,7 @@ def diff2mask(diff_4d):
     mask = np.zeros_like(diff_4d)
     mask[diff_4d > th+3] = 1
     mask[diff_4d < th-3] = 1
-    mask = cv2.medianBlur(mask, 5)
+    ##mask = cv2.medianBlur(mask, 5)
     return mask
 
 def diff_4d(img1, img2):
@@ -84,19 +84,23 @@ def edge4d():
     success, img1 = cap.read()
     output_dir = "C:\\My_Projects\\ProjectsWithZoran\\video_on_intersection\\tracked_video"
     count = 0
-    while success:
-        success, img2 = cap.read()
-        img_diff = diff_4d(img1, img2)
-        mask = diff2mask(img_diff)
-        alpha = 0.5
-        color = (1,1,0)
-        img1 = img1.astype(np.double)
-        for c in range(3):
-            img1[:, :, c] = np.where(mask == 1, img1[:, :, c] * (1 - alpha) + alpha * color[c] * 255, img1[:, :, c])
-        img1 = img1.astype(np.uint8)
-        cv2.imwrite(os.path.join(output_dir, "%06d.jpg" % count), img1)
-        img1 = img2.copy()
-        count += 1
-        if count%10 == 0:
-            print(count)
+    #while success:
+    success, img2 = cap.read()
+    img_diff = diff_4d(img1, img2)
+    plt.imshow(img_diff, cmap='gray')
+    plt.show()
+    mask = diff2mask(img_diff)
+    plt.imshow(mask, cmap='gray')
+    plt.show()
+    alpha = 0.5
+    color = (1,1,0)
+    img1 = img1.astype(np.double)
+    for c in range(3):
+        img1[:, :, c] = np.where(mask == 1, img1[:, :, c] * (1 - alpha) + alpha * color[c] * 255, img1[:, :, c])
+    img1 = img1.astype(np.uint8)
+    #cv2.imwrite(os.path.join(output_dir, "%06d.jpg" % count), img1)
+    img1 = img2.copy()
+    count += 1
+    if count%10 == 0:
+        print(count)
 edge4d()

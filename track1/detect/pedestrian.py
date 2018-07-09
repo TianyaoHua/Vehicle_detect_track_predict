@@ -137,7 +137,7 @@ class PedestrianDataset(utils.Dataset):
             #load the class index of each polygons
             class_indexes = [r['region_attributes'] for r in a['regions']]
             for i in range(len(class_indexes)):
-                if class_indexes[i] == 0:
+                if class_indexes[i] == '0':
                     class_indexes[i] = 1
                 else:
                     class_indexes[i] = 3

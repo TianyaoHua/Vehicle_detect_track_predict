@@ -135,12 +135,12 @@ class PedestrianDataset(utils.Dataset):
             # shape_attributes (see json format above)
             polygons = [r['shape_attributes'] for r in a['regions']]
             #load the class index of each polygons
-            class_indexes = [r['region_attributes'] for r in a['regions']]
-            for i in range(len(class_indexes)):
-                if class_indexes[i] == '0':
-                    class_indexes[i] = 1
+            class_indexes = []#[r['region_attributes'] for r in a['regions']]
+            for i in range(len(a['regions'])):
+                if a['regions'][i]['region_attributes']['car'] == '0':
+                    class_indexes.append(1)
                 else:
-                    class_indexes[i] = 3
+                    class_indexes.append(3)
             # load_mask() needs the image size to convert polygons to masks.
             # Unfortunately, VIA doesn't include it in JSON, so we must read
             # the image. This is only managable since the dataset is tiny.

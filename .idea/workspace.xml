@@ -52,8 +52,8 @@
       <file leaf-file-name="pedestrian.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track1/detect/pedestrian.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+            <state relative-caret-position="215">
+              <caret line="142" column="42" lean-forward="false" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -162,19 +162,12 @@
             <path>
               <item name="2018AICITY_Team_Columbia" type="b2602c69:ProjectViewProjectNode" />
               <item name="2018AICITY_Team_Columbia" type="462c0819:PsiDirectoryNode" />
-              <item name="track1" type="462c0819:PsiDirectoryNode" />
+              <item name="annotations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="2018AICITY_Team_Columbia" type="b2602c69:ProjectViewProjectNode" />
               <item name="2018AICITY_Team_Columbia" type="462c0819:PsiDirectoryNode" />
               <item name="track1" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2018AICITY_Team_Columbia" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2018AICITY_Team_Columbia" type="462c0819:PsiDirectoryNode" />
-              <item name="track1" type="462c0819:PsiDirectoryNode" />
-              <item name="detect" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -637,8 +630,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/track1/detect/pedestrian.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="139" column="42" lean-forward="false" selection-start-line="139" selection-start-column="42" selection-end-line="139" selection-end-column="42" />
+        <state relative-caret-position="215">
+          <caret line="142" column="42" lean-forward="false" selection-start-line="142" selection-start-column="42" selection-end-line="142" selection-end-column="42" />
           <folding />
         </state>
       </provider>

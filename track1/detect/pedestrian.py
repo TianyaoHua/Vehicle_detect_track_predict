@@ -81,7 +81,7 @@ class PedestrianDataset(utils.Dataset):
         dataset_dir: Root directory of the dataset. /C:\My_Projects\ProjectsWithZoran\video_on_intersection\imgs/
         subset: Subset to load: train or val
         """
-        # Add classes. We have only one class to add.
+        # Add classes. We have 80 classew to add.
         class_names = ['person', 'bicycle', 'car', 'motorcycle', 'airplane',
                        'bus', 'train', 'truck', 'boat', 'traffic light',
                        'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird',
@@ -121,7 +121,7 @@ class PedestrianDataset(utils.Dataset):
         #   'size': 100202
         # }
         # We mostly care about the x and y coordinates of each region
-        annotations = json.load(open(os.path.join(dataset_dir, "vehicle-detect-track-predict.json")))
+        annotations = json.load(open(os.path.join(dataset_dir, "vehicle-detect-track-predict_PandC.json")))
         annotations = list(annotations['_via_img_metadata'].values())  # don't need the dict keys
 
         # The VIA tool saves images in the JSON even if they don't have any
@@ -134,7 +134,13 @@ class PedestrianDataset(utils.Dataset):
             # the outline of each object instance. There are stores in the
             # shape_attributes (see json format above)
             polygons = [r['shape_attributes'] for r in a['regions']]
-
+            #load the class index of each polygons
+            class_indexes = [r['region_attributes'] for r in a['regions']]
+            for i in range(len(class_indexes)):
+                if class_indexes[i] == 0:
+                    class_indexes[i] = 1
+                else:
+                    class_indexes[i] = 3
             # load_mask() needs the image size to convert polygons to masks.
             # Unfortunately, VIA doesn't include it in JSON, so we must read
             # the image. This is only managable since the dataset is tiny.
@@ -147,7 +153,7 @@ class PedestrianDataset(utils.Dataset):
                 image_id=a['filename'],  # use file name as a unique image id
                 path=image_path,
                 width=width, height=height,
-                polygons=polygons)
+                polygons=polygons, class_indexes=class_indexes)
 
     def load_mask(self, image_id):
         """Generate instance masks for an image.
@@ -166,6 +172,7 @@ class PedestrianDataset(utils.Dataset):
         info = self.image_info[image_id]
         mask = np.zeros([info["height"], info["width"], len(info["polygons"])],
                         dtype=np.uint8)
+        class_IDs = np.array(info["class_indexes"], dtype=np.int32)
         for i, p in enumerate(info["polygons"]):
             # Get indexes of pixels inside the polygon and set them to 1
             rr, cc = skimage.draw.polygon(p['all_points_y'], p['all_points_x'])
@@ -173,7 +180,8 @@ class PedestrianDataset(utils.Dataset):
 
         # Return mask, and array of class IDs of each instance. Since we have
         # one class ID only, we return an array of 1s
-        return mask.astype(np.bool), np.ones([mask.shape[-1]], dtype=np.int32)
+        #return mask.astype(np.bool), np.ones([mask.shape[-1]], dtype=np.int32)
+        return mask.astype(np.bool), class_IDs
 
     def image_reference(self, image_id):
         """Return the path of the image."""

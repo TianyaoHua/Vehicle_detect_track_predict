@@ -133,6 +133,8 @@ class PedestrianDataset(utils.Dataset):
             # Get the x, y coordinaets of points of the polygons that make up
             # the outline of each object instance. There are stores in the
             # shape_attributes (see json format above)
+            if a['filename']=='frame636.jpg' or a['filename']=='frame2120.jpg':
+                continue #these two frames contain bug polygons. to be fixed.
             polygons = [r['shape_attributes'] for r in a['regions']]
             #load the class index of each polygons
             class_indexes = []#[r['region_attributes'] for r in a['regions']]
@@ -176,14 +178,14 @@ class PedestrianDataset(utils.Dataset):
         for i, p in enumerate(info["polygons"]):
             # Get indexes of pixels inside the polygon and set them to 1
             rr, cc = skimage.draw.polygon(p['all_points_y'], p['all_points_x'])
-            try:
-                mask[rr, cc, i] = 1
-            except Exception as e:
-                print("error:", e)
-                print("polygons:", p)
-                print("rr", rr)
-                print("cc", cc)
-                sys.exit(0)
+            # try:
+            mask[rr, cc, i] = 1
+            # except Exception as e:
+            #     print("error:", e)
+            #     print("polygons:", p)
+            #     print("rr", rr)
+            #     print("cc", cc)
+            #     sys.exit(0)
 
         # Return mask, and array of class IDs of each instance. Since we have
         # one class ID only, we return an array of 1s

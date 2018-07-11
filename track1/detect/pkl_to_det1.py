@@ -52,7 +52,7 @@ def main(video_dir, detection_file, output_dir):
             os.makedirs(det_dir)
         f = open(os.path.join(det_dir,videoname.split(".")[0]+"_det.txt"), "w+")
         ub = min(ub_init, len(pkl_files)-1)
-        lb = max(lb_init, 0) 
+        lb = max(lb_init, 0)
         pbar = tqdm.tqdm(total = ub-lb+1)
         padding_length = 0
         for pkl in pkl_files:
@@ -76,7 +76,7 @@ def main(video_dir, detection_file, output_dir):
                 if cid in ['car', 'truck', 'bus', 'person', 'motorcycle', 'bicycle']:
                     contour = np.concatenate(tuple([single_contour for single_contour in r['contours'][i]]))
                     contour_length = contour.shape[0]
-                    print(contour.shape)
+                    contour = np.squeeze(contour)
                     det = [fid, 0.5*(x1+x2), 0.5*(y1+y2), abs(x2 - x1), abs(y2 - y1), contour_length, conf]
                     string = " ".join([str(x) for x in det]) + '\n'
                     for c in contour:

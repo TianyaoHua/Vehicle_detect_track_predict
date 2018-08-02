@@ -179,7 +179,7 @@ class PedestrianDataset(utils.Dataset):
             # Get indexes of pixels inside the polygon and set them to 1
             rr, cc = skimage.draw.polygon(p['all_points_y'], p['all_points_x'])
             #try:
-            rr = max(rr, 1079)
+            rr[rr > 1079] = 1079
             mask[rr, cc, i] = 1
             #except Exception as e:
                 #print("error:", e)

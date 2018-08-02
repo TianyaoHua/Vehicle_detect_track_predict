@@ -178,14 +178,14 @@ class PedestrianDataset(utils.Dataset):
         for i, p in enumerate(info["polygons"]):
             # Get indexes of pixels inside the polygon and set them to 1
             rr, cc = skimage.draw.polygon(p['all_points_y'], p['all_points_x'])
-            # try:
-            mask[rr, cc, i] = 1
-            # except Exception as e:
-            #     print("error:", e)
-            #     print("polygons:", p)
-            #     print("rr", rr)
-            #     print("cc", cc)
-            #     sys.exit(0)
+            try:
+                mask[rr, cc, i] = 1
+            except Exception as e:
+                print("error:", e)
+                print("polygons:", p)
+                print("rr", rr)
+                print("cc", cc)
+                sys.exit(0)
 
         # Return mask, and array of class IDs of each instance. Since we have
         # one class ID only, we return an array of 1s

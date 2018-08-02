@@ -121,7 +121,7 @@ class PedestrianDataset(utils.Dataset):
         #   'size': 100202
         # }
         # We mostly care about the x and y coordinates of each region
-        annotations = json.load(open(os.path.join(dataset_dir, "vehicle-detect-track-predict_PandC.json")))
+        annotations = json.load(open(os.path.join(dataset_dir, "old_video_annotation.json")))
         annotations = list(annotations['_via_img_metadata'].values())  # don't need the dict keys
 
         # The VIA tool saves images in the JSON even if they don't have any
@@ -133,8 +133,8 @@ class PedestrianDataset(utils.Dataset):
             # Get the x, y coordinaets of points of the polygons that make up
             # the outline of each object instance. There are stores in the
             # shape_attributes (see json format above)
-            if a['filename']=='frame636.jpg' or a['filename']=='frame2120.jpg':
-                continue #these two frames contain bug polygons. to be fixed.
+            #if a['filename']=='frame636.jpg' or a['filename']=='frame2120.jpg':
+             #   continue #these two frames contain bug polygons. to be fixed.
             polygons = [r['shape_attributes'] for r in a['regions']]
             #load the class index of each polygons
             class_indexes = []#[r['region_attributes'] for r in a['regions']]

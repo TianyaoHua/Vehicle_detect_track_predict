@@ -135,7 +135,7 @@ class PedestrianDataset(utils.Dataset):
             # shape_attributes (see json format above)
             #if a['filename']=='frame636.jpg' or a['filename']=='frame2120.jpg':
              #   continue #these two frames contain bug polygons. to be fixed.
-            if a['filename'] in ['frame001287.jpg', 'frame001430.jpg','frame009520.jpg', 'frame001001.jpg', 'frame002002.jpg']:
+            if a['filename'] in ['frame001287.jpg', 'frame001430.jpg','frame009520.jpg', 'frame001001.jpg', 'frame002002.jpg', 'frame002431.jpg',]:
                 continue
             polygons = [r['shape_attributes'] for r in a['regions']]
             #load the class index of each polygons

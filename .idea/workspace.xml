@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a573ac79-d7b6-4ed0-9814-a17f9431bdd8" name="Default" comment="" />
+    <list default="true" id="a573ac79-d7b6-4ed0-9814-a17f9431bdd8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/CFilter.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/CMatrix.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/CTensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/CTensor4D.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/CVector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/NMath.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/NMath.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1.bmf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_01.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_02.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_03.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_04.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_05.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_06.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_07.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_08.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_09.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_10.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_11.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_12.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_13.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_14.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_15.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_16.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_17.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_18.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/cars1_19.ppm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/ldof.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/tracking.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,12 +60,13 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Makefile" value="1" />
+          <entry key="gitignore" value="1" />
           <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -49,20 +83,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/readme.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/Makefile">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="-1296">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -131,7 +156,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-275" />
     <option name="y" value="475" />
     <option name="width" value="1750" />
@@ -148,17 +173,6 @@
             <path>
               <item name="Vehicle_detect_track_predict" type="b2602c69:ProjectViewProjectNode" />
               <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vehicle_detect_track_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vehicle_detect_track_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -314,7 +328,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23020135" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -372,7 +386,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/track1/training/balloon.htm" />
     <entry file="file://$PROJECT_DIR$/track1/training/balloon.py" />
     <entry file="file://$PROJECT_DIR$/track1/detect/parallel_model.py">
       <provider selected="true" editor-type-id="text-editor" />
@@ -566,7 +579,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="187">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
@@ -575,6 +588,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1296">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
         </state>
       </provider>
     </entry>

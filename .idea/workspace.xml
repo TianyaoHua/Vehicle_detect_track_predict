@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a573ac79-d7b6-4ed0-9814-a17f9431bdd8" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/eccv2010_trackingGPU/eccv2010_trackingGPU/Makefile" afterDir="false" />
-    </list>
+    <list default="true" id="a573ac79-d7b6-4ed0-9814-a17f9431bdd8" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +131,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-275" />
     <option name="y" value="475" />
     <option name="width" value="1750" />
@@ -162,75 +159,6 @@
               <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
               <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
               <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vehicle_detect_track_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name=".vs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vehicle_detect_track_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name=".vs" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vehicle_detect_track_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name=".vs" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="v15" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vehicle_detect_track_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name=".vs" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="v15" type="462c0819:PsiDirectoryNode" />
-              <item name="ipch" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vehicle_detect_track_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name=".vs" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="v15" type="462c0819:PsiDirectoryNode" />
-              <item name="ipch" type="462c0819:PsiDirectoryNode" />
-              <item name="AutoPCH" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vehicle_detect_track_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name=".vs" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="v15" type="462c0819:PsiDirectoryNode" />
-              <item name="ipch" type="462c0819:PsiDirectoryNode" />
-              <item name="AutoPCH" type="462c0819:PsiDirectoryNode" />
-              <item name="6482a3379abb5189" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Vehicle_detect_track_predict" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Vehicle_detect_track_predict" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name=".vs" type="462c0819:PsiDirectoryNode" />
-              <item name="eccv2010_trackingGPU" type="462c0819:PsiDirectoryNode" />
-              <item name="v15" type="462c0819:PsiDirectoryNode" />
-              <item name="ipch" type="462c0819:PsiDirectoryNode" />
-              <item name="AutoPCH" type="462c0819:PsiDirectoryNode" />
-              <item name="a094b19733e06d80" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -386,7 +314,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23020135" />
       <window_info id="Structure" order="1" weight="0.25" />
